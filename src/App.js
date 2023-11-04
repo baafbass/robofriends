@@ -3,10 +3,6 @@ import CardList from './CardList'
 import SearchBox from './SearchBox'
 import {robots} from './robots.js';
 
- function onSearchChange(event)
-    {
-      console.log(event.target.value);
-    }
 
 class App extends Component {
 	constructor()
@@ -16,21 +12,31 @@ class App extends Component {
      robots: robots,
      searchfield: ''
     }
-    
-   
-
 	}
+
+ onSearchChange = (event) =>
+    {
+      this.setState({searchfield: event.target.value})
+    }
+	
 	
 	render(){
+      const filteredRobots = this.state.robots.filter(robot => 
+      {
+       return robot.name.toLowerCase().includes(this.state.searchfield.toLowerCase())
+      })
+
+
 		return (
 	    <div className="tc">
 	    <h1>RoboFriends</h1>
-	     <SearchBox searchChange ={onSearchChange}/>
-        <CardList robots={this.state.robots}/>
+	     <SearchBox searchChange ={this.onSearchChange}/>
+        <CardList robots={filteredRobots}/>
         </div>
 	)
 	}
 
 }
+
 
 export default App;
