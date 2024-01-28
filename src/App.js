@@ -7,24 +7,10 @@ import './App.css'
 
 
 function App (){
-// 	constructor()
-// 	{
-//       super()
-//       this.state = {
-//      robots: [],
-//      searchfield: ''
-//     }
-// 	}
 
 const [robots,setRobots] = useState([])
 const [searchfield,setSearchfield] = useState('')
-
-// componentDidMount()
-// {
-// 	fetch('https://jsonplaceholder.typicode.com/users')
-//   .then(response => response.json())
-//   .then(users => this.setState({robots: users}))      
-// }
+const [count,setCount] = useState(0)
 
 useEffect(()=>{
     fetch('https://jsonplaceholder.typicode.com/users')
@@ -50,6 +36,7 @@ useEffect(()=>{
 	    <div className="tc">
 	    <h1 className="f2">RoboFriends</h1>
 	     <SearchBox searchChange ={onSearchChange}/>
+       <button onClick={()=>setCount(count+1)}>Click Me!!</button>
        <Scroll>
        <ErrorBoundry>
         <CardList robots={filteredRobots}/>
