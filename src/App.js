@@ -16,7 +16,7 @@ useEffect(()=>{
     fetch('https://jsonplaceholder.typicode.com/users')
    .then(response => response.json())
    .then(users => setRobots(users))      
-},[])
+},[count]) // only run when count change
 
  const onSearchChange = (event) =>
     {
