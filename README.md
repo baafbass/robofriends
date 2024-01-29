@@ -32,14 +32,14 @@ To run the app on your local host :
   These actions are dispatched to the Redux store, initiating the appropriate updates.
   Actions are defined as plain JavaScript objects, providing a clear and predictable way to communicate state changes.
 
-  <img width="927" alt="robofriends3" src="https://github.com/baafbass/robofriends/assets/98693906/89553c08-5be4-4a9f-be4e-0f654e02584a">
+  <img width="929" alt="robofriends1" src="https://github.com/baafbass/robofriends/assets/98693906/3fea1743-edf0-4d26-b855-809036bfad9e">
 
   ### Reducers
   Reducers play a crucial role in determining how the application state evolves in response to dispatched actions.
   In this app, reducers are carefully crafted functions that specify how different parts of the state are updated.
   This follows the Redux pattern, maintaining a pure and predictable state transformation process.
 
-   <img width="929" alt="robofriends1" src="https://github.com/baafbass/robofriends/assets/98693906/3fea1743-edf0-4d26-b855-809036bfad9e">
+  <img width="927" alt="robofriends3" src="https://github.com/baafbass/robofriends/assets/98693906/89553c08-5be4-4a9f-be4e-0f654e02584a">
 
    # Conclusion
 
