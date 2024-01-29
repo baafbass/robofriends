@@ -8,9 +8,11 @@ To run the app on your local host :
   
 - Clone the repo
 
-- Run npm install
-- Run npm update
-- Run npm start
+- Run `npm install`
+- Run `npm update`
+- Run `npm start`
+
+
 
 
 
