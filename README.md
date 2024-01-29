@@ -34,8 +34,17 @@ To run the app on your local host :
 
   <img width="927" alt="robofriends3" src="https://github.com/baafbass/robofriends/assets/98693906/89553c08-5be4-4a9f-be4e-0f654e02584a">
 
+  ### Reducers
+  Reducers play a crucial role in determining how the application state evolves in response to dispatched actions.
+  In this app, reducers are carefully crafted functions that specify how different parts of the state are updated.
+  This follows the Redux pattern, maintaining a pure and predictable state transformation process.
 
+   <img width="929" alt="robofriends1" src="https://github.com/baafbass/robofriends/assets/98693906/3fea1743-edf0-4d26-b855-809036bfad9e">
 
+   # Conclusion
 
+  The use of Redux in the Robofriends project provides a robust and scalable architecture for state management.
+  By adhering to Redux principles, such as a single source of truth and predictable state changes, this application
+  becomes more maintainable and easier to scale as the complexity of the project grows.
 
 
