@@ -1,11 +1,11 @@
-import React,{Component} from 'react';
+import React from 'react';
 import CardList from '../components/CardList'
 import SearchBox from '../components/SearchBox'
 import Scroll from '../components/Scroll'
 import './App.css'
 
 
-class App extends Component {
+class App extends React.Component {
 	constructor()
 	{
       super()
